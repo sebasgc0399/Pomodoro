@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>Pomodoro</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <!-- App container -->
+    <div id="app">
+
+      <!-- Timer container -->
+      <div id="time">
+        <div id="value"></div> <!-- Timer value display -->
+        <div id="taskName"></div> <!-- Task name display -->
+      </div>
+
+      <!-- Tasks container -->
+      <div class="tasks-container">
+
+        <!-- Form for adding tasks -->
+        <div class="form">
+          <form action="" id="form">
+            <input type="text" id="itTask" />
+            <input type="submit" id="bAdd" value="Agregar Tarea" />
+          </form>
+        </div>
+
+        <!-- List of tasks -->
+        <div id="tasks"></div>
+      </div>
+    </div>
     
-</body>
+    <!-- JavaScript file -->
+    <script src="main.js"></script>
+  </body>
 </html>
